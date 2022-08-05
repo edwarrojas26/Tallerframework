@@ -111,6 +111,7 @@ h5 {
         background: url(../img/bg-features.png);
         color: var(--blanco);
         padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
     .features-title {
@@ -161,6 +162,35 @@ h5 {
         text-align: center;
     }
 
+    #fondo {
+        display: flex;
+        align-items: flex-end;
+        background: url(../img/slide1.jpg);
+        color: white;
+        padding-top: 1rem;
+        height: 780px;
+    }
+
+    .fondo-title {
+        padding: 2%;
+        font-family: marcellus;
+        text-align: left;
+        font-size: 76px;
+
+        width: 100%;
+        background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.0001));
+    }
+
+    .fondo {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 30%;
+        margin-left: 68rem;
+        margin-top: -15rem;
+    }
+
     .location-tittle {
         color: var(--negro2);
         font-size: 2em;
@@ -202,16 +232,15 @@ h5 {
 
     .cards-container {
         position: relative;
-        width: 95%;
+        width: 100%;
         display: flex;
         justify-content: center;
         gap: 50px;
         flex-wrap: wrap;
+        flex-direction: column;
         margin-top: -4.5%;
         margin-bottom: 5%;
         left: 3%;
-        background-color: var(--degradado);
-        align-items: center;
     }
 
     .cards-profile {
@@ -220,6 +249,7 @@ h5 {
         background-image: url(../img/Group\ 200.svg);
         background-size: cover;
         border-radius: 5px;
+
     }
 
     .container-name {
@@ -254,11 +284,6 @@ h5 {
         color: var(--Magenta);
         font-size: 150%;
         padding: 1%;
-    }
-
-    .container-lines {
-        text-align: center;
-        align-self: flex-end;
     }
 
     .lines {
@@ -364,8 +389,9 @@ h5 {
     }
 
     .information-zone {
-        padding: 25px;
-        width: 50em;
+        width: 36em;
+        align-self: center;
+        font-size: 1.5em;
     }
 
     .information-image img {
@@ -435,7 +461,7 @@ h5 {
     }
 
     .cards-profile {
-        width: 32%;
+        width: 25%;
         padding: 2%;
         background-image: url(../img/Group\ 200.svg);
         background-size: cover;
@@ -500,7 +526,7 @@ h5 {
         flex-direction: row;
         width: 100%;
         height: auto;
-        padding: 0px;
+        padding: 20px;
     }
 
     .footer-section section {
@@ -533,3 +559,7 @@ h5 {
     }
 
 }
+
+/* * {
+    border: solid red 1px;
+} */

@@ -40,7 +40,7 @@ h5 {
   color: var(--blanco);
   display: flex;
   flex-direction: column;
-  height: 425px;
+  height: 500px;
   width: 400px;
   align-items: center;
   margin: auto;
@@ -135,7 +135,7 @@ button {
   .container-form {
     display: flex;
     flex-direction: column;
-    height: 425px;
-    width: 400px;
+    height: 600px;
+    width: 500px;
   }
 }
