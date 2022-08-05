@@ -2,17 +2,20 @@
 <html lang="en">
 
 <head>
-
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/estilo.css">
-    <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estilo.css">
     <link rel="icon" href="img/Hotelia blanco vertical.svg">
-    <title>Hotelia | Inicio</title>
+    <title>Taller 0 | Index Flexbox</title>
 </head>
 
 <body>
-
     <nav>
         <div class="logo">
             <img src="img/Hotelia horizontal blanco.svg">
@@ -24,34 +27,65 @@
             <a href="ubicanos.html" class="item">Ubícanos</a>
             <a href="opiniones.html" class="item">Opiniones</a>
             <hr class="menu-hr" noshade="">
-            <a href="#" class="item"><button class="navbar-button"><i class="fa-solid fa-user"></i> Iniciar Sesión</button></a>
+            <a href="#" class="item"><button class="navbar-button"><i class="fa-solid fa-user"></i> Iniciar
+                    Sesión</button></a>
         </div>
     </nav>
 
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/slide2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
 
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/slide1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
 
-    <div id="fondo">
-        <h1 class="fondo-title">Lorem ipsum dolor sit ametelier, <br>consectetur adipisicing elit.</h1>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
-    <div class="par">
-        <p>Estamos ubicados en el barrio La Cabrera al norte de Bogotá, en un contexto de <br>lujo donde interactúan los
-            negocios,
-            el ocio y el descanso, gracias a su<br> estratégica ubicación rodeada de bancos, restaurantes de alta
-            cocina, centros<br>
-            comerciales, almacenes de lujo y emblemáticos parques para aprovechar la<br> naturaleza entre la ciudad
-            caminay y hacer
-            un poco de deporte al aire libre están<br> el parque del Virrey y El Parque de la 93. Además de nuestro
-            exclusivo diseño,<br>
-            ponemos a tu disposición una oferta gastronómica tan sofisticada como<br> saludable a base de productos
-            locales, cargados
-            de lo mejor de la tradición <br>colombiana.</p>
-
+    <div id="information-section">
+        <div class="information-zone">
+            <p>Estamos ubicados en el barrio La Cabrera al norte de Bogotá, en un contexto de
+                lujo donde interactúan los negocios, el ocio y el descanso, gracias a su
+                estratégica ubicación rodeada de bancos, restaurantes de alta cocina, centros
+                comerciales, almacenes de lujo y emblemáticos parques para aprovechar la
+                naturaleza entre la ciudad caminar y hacer un poco de deporte al aire libre están
+                el parque del Virrey y El Parque de la 93. Además de nuestro exclusivo diseño,
+                ponemos a tu disposición una oferta gastronómica tan sofisticada commo
+                saludable a base de productos locales, cargados de lo mejor de la tradición
+                colombiana.
+            </p>
+        </div>
+        <div class="information-image">
+            <img src="./img/Hotelia negro vertical.svg" alt="">
+        </div>
     </div>
 
-    <div class="imagen2">
-        <img src="IMG/Hotelia negro vertical.svg">
-    </div>
     <section id="features">
         <h2 class="features-title">Razones por las que disfrutarás quedarte con nosotros</h2>
         <div class="features-description">
@@ -65,151 +99,148 @@
             </div>
             <div class="feature feature-blue">
                 <i class="fa-solid fa-wifi"></i>
-                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum</p>
             </div>
             <div class="feature feature-black">
                 <i class="fa-solid fa-dumbbell"></i>
-                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum</p>
             </div>
         </div>
     </section>
-    <!--UBICACION-->
-    <section><br><br><br>
-        <div class="ubi">
-            <p><b>Ubícanos</b></p>
-        </div>
-        <iframe class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9644120169796!2d-74.07746738467434!3d4.600397243798682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a7147877c9%3A0x378b95e9cbda0740!2sCra.%208%20%2312a-42%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1658839374658!5m2!1ses!2sco"
-            width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+
+    <div id="container-location">
+        <h2 class="location-tittle">Ubícanos</h2>
+
+        <iframe class="cont-maps"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2603.668779715141!2d-74.07073232748797!3d4.605737218435465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1658870245530!5m2!1ses!2sco"
+            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-
-        <br><br>
-
-        <div class="dir">
-            <div class="footer-col">
-                <div class="direccion">
-                    <p>AVENIDA CARRERA 8, #12-42, BOGOTA DC, COLOMBIA</p>
-                </div>
-                <div class="numero">
-                    <p>+57 601 4567899</p>
-                </div>
-            </div>
-            <br><br><br>
+        <div class="location-zone">
+            <p>AVENIDA CARRERA 8, #12A-42, BOGOTA DC, COLOMBIA</p>
+            <hr class="split-line">
+            <p>+57 601 4567899</p>
         </div>
-        <!--opiniones-->
-        <!--CONTENEDOR 1-->
+    </div>
 
-        <div class="title-cards">
-            <h1>Nuestros usuarios dicen...</h1>
+    <div class="cards-text">
+        <h1>Nuestros usuarios dicen...</h1>
+    </div>
+
+    <div class="cards-container">
+
+        <div class="cards-profile">
+            <div class="cards-name">
+                <img src="./img/men1.jpg" alt="">
+            </div>
+            <div class="container-name">
+                <h2>Diego Rodriguez</h2>
+
+                <i class="fa-solid fa-star icon"></i>
+                <i class="fa-solid fa-star icon"></i>
+                <i class="fa-solid fa-star icon"></i>
+                <i class="fa-solid fa-star icon"></i>
+                <i class="fa-solid fa-star icon-color"></i>
+            </div>
+
+            <div class="cards-description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores perferendis rem ipsam
+                    veniam reiciendis eveniet optio eum velit, dignissimos asperiores fugit molestias ipsum
+                    temporibus
+                    rerum hic iste nulla vitae?</p>
+            </div>
+
         </div>
 
-        <section class="card">
+        <div class="cards-profile">
+            <div class="cards-name">
+                <img src="./img/mujer.jpg" alt="">
+            </div>
+            <div class="container-name">
+                <h2>Diana García</h2>
+                <i class="fa-solid fa-star icon"></i>
+                <i class="fa-solid fa-star icon"></i>
+                <i class="fa-solid fa-star icon"></i>
+                <i class="fa-solid fa-star icon"></i>
+                <i class="fa-solid fa-star icon"></i>
+            </div>
 
-            <div class="card__profile">
-                <div class="card__name">
-                    <img src="img/men1.jpg" alt="">
-                </div>
-                <div class="name">
-                    <h2>Diego Rodriguez</h2>
+            <div class="cards-description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores perferendis rem ipsam
+                    veniam reiciendis eveniet optio eum velit, dignissimos asperiores fugit molestias ipsum
+                    temporibus
+                    rerum hic iste nulla vitae?</p>
+            </div>
 
-                    <i class="fa-solid fa-star icon"></i>
-                    <i class="fa-solid fa-star icon"></i>
-                    <i class="fa-solid fa-star icon"></i>
-                    <i class="fa-solid fa-star icon"></i>
-                    <i class="fa-solid fa-star icon-color"></i>
-                </div>
+        </div>
+        <div class="cards-profile">
+            <div class="cards-name">
+                <img src="./img/men2.jpg" alt="">
+            </div>
 
-                <div class="card__description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores perferendis rem ipsam
-                        veniam reiciendis eveniet optio eum velit, dignissimos asperiores fugit molestias ipsum
-                        temporibus
-                        rerum hic iste nulla vitae?</p>
-                </div>
+            <div class="container-name">
+                <h2>Diego Rodriguez</h2>
+                <i class="fa-solid fa-star icon"></i>
+                <i class="fa-solid fa-star icon"></i>
+                <i class="fa-solid fa-star icon"></i>
+                <i class="fa-solid fa-star icon"></i>
+                <i class="fa-solid fa-star icon-color"></i>
 
             </div>
 
-            <div class="card__profile">
-                <div class="card__name">
-                    <img src="img/mujer.jpg" alt="">
-                </div>
-                <div class="name">
-                    <h2>Diana García</h2>
-                    <i class="fa-solid fa-star icon"></i>
-                    <i class="fa-solid fa-star icon"></i>
-                    <i class="fa-solid fa-star icon"></i>
-                    <i class="fa-solid fa-star icon"></i>
-                    <i class="fa-solid fa-star icon"></i>
-                </div>
-
-                <div class="card__description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores perferendis rem ipsam
-                        veniam reiciendis eveniet optio eum velit, dignissimos asperiores fugit molestias ipsum
-                        temporibus
-                        rerum hic iste nulla vitae?</p>
-                </div>
-
-            </div>
-            <div class="card__profile">
-                <div class="card__name">
-                    <img src="img/men2.jpg" alt="">
-                </div>
-
-                <div class="name">
-                    <h2>Diego Rodriguez</h2>
-                    <i class="fa-solid fa-star icon"></i>
-                    <i class="fa-solid fa-star icon"></i>
-                    <i class="fa-solid fa-star icon"></i>
-                    <i class="fa-solid fa-star icon"></i>
-                    <i class="fa-solid fa-star icon-color"></i>
-
-                </div>
-
-                <div class="card__description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores perferendis rem ipsam
-                        veniam reiciendis eveniet optio eum velit, dignissimos asperiores fugit molestias ipsum
-                        temporibus
-                        rerum hic iste nulla vitae?</p>
-                </div>
-
+            <div class="cards-description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores perferendis rem ipsam
+                    veniam reiciendis eveniet optio eum velit, dignissimos asperiores fugit molestias ipsum
+                    temporibus
+                    rerum hic iste nulla vitae?</p>
             </div>
 
+        </div>
+        <div class="container-lines">
+            <hr class="lines">
+            </hr>
+            <hr class="lines">
+            </hr>
+            <hr class="lines">
+            </hr>
+        </div>
+    </div>
+
+    <div class="footer-section">
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quas eum repellat ab, assumenda
+                cum
+                amet aspernatur earum quos laborum excepturi facilis, laudantium ducimus quam.</p>
+            <hr class="split-lines">
+            <div class="icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
         </section>
-
-
-    </section>
-    <!--::::Pie de Pagina::::::-->
-    <footer class="pie-pagina">
-        <div class="grupo-1">
-            <div class="box">
-                <figure>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quos, tempora! Molestias sunt quae accusantium, numquam consequatur
-                        totam eligendi cumque veritatis magnam rem, omnis magni veniam laboriosam </p>
-
-                </figure>
-                <div class="red-social">
-
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                </div>
-
+        <section>
+            <div class="footer-direction">
+                <i class="fa-solid fa-location-dot"></i>
+                <span> Avenida Carrera 8, #12A-42, Bogotá DC, Colombia</span>
             </div>
-            <div class="box">
-                <br>
-                <p><i class="fa-solid fa-location-dot"></i> carrera 8, #12A-42, Bogotá DC.</p>
-                <p><i class="fa-solid fa-phone"></i>+57 601 4567899</p>
+            <div class="footer-cellphone">
+                <i class="fa-solid fa-phone"></i>
+                <span> +57 601 4567899</span>
             </div>
-            <div class="box" id="box">
-                <br>
-                <p>Politicas de privacidad</p><br>
+            <hr class="split-lines">
+        </section>
+        <section>
+            <div class="footer-policies">
+                <p>Politicas de privacidad</p>
                 <p>Politicas de privacidad</p>
             </div>
-        </div>
+            <hr class="split-lines">
+        </section>
+    </div>
 
-    </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 
 </body>
 
