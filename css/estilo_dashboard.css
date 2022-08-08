@@ -1,4 +1,4 @@
-@import url(&#39;https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap&#39;);
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
   --azulclaro: #48d6ed;
@@ -29,317 +29,324 @@ body {
   background-size: cover;
 }
 
-nav {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  background: var(--azulnegro);
-  width: 330px;
-}
+@media only screen and (min-width: 320px) {
+  nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: var(--azulnegro);
+    width: 250px;
+  }
 
-.logo img {
-  width: 4rem;
-  margin-top: 14px;
-  margin-left: -3.6em;
-}
+  .logo img {
+    width: 4rem;
+    margin-top: 14px;
+    margin-left: -2em;
+  }
 
-.nav-title {
-  color: var(--blanco);
-  font-size: 50px;
-  margin-left: 15px;
-  margin-top: -55px;
-}
+  .nav-title {
+    color: var(--blanco);
+    font-size: 50px;
+    margin-top: -55px;
+    margin-left: 0.8em;
+    font-family: "Marcellus", serif;
+  }
 
-.container-image {
-  position: relative;
-  width: 20.5em;
-  height: 14.5em;
-  top: -15px;
-  background-image: url(../img/Group\ 200.svg);
-  background-size: cover;
-}
+  .container-image {
+    position: relative;
+    width: 20.8 em;
+    height: 14.5em;
+    top: -15px;
+    background-image: url(../img/Group\ 200.svg);
+    background-size: cover;
+  }
 
-.logo {
-  position: relative;
-  top: 10%;
-  left: 20%;
-}
+  .logo {
+    position: relative;
+    top: 10%;
+    left: 20%;
+  }
 
-.name-user {
-  position: relative;
-  color: var(--blanco);
-  padding-top: 85px;
-  left: 60px;
-  font-size: 23px;
-}
+  .name-user {
+    position: relative;
+    color: var(--blanco);
+    padding-top: 70px;
+    left: 18px;
+    font-size: 23px;
+    font-family: "Roboto", sans-serif;
+  }
 
-.gmail-user {
-  font-size: 13px;
-}
+  .gmail-user {
+    font-size: 13px;
+  }
 
-.icon {
-  color: var(--blanco);
-}
+  .icon {
+    color: var(--blanco);
+  }
 
-.img-person {
-  text-align: center;
-  display: flex;
-  transition: all 0.5s ease;
-  margin: 10px 0 0 10px;
-}
+  .img-person {
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 10px;
+  }
 
-.img-person img {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-}
+  .img-person img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
 
-.img-person span {
-  font-weight: bold;
-  padding-left: 15px;
-  font-size: 18px;
-  text-transform: uppercase;
-}
+  .img-person span {
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
 
-a {
-  position: relative;
-  color: rgb(85, 83, 83);
-  font-size: 14px;
-  display: table;
-  width: 330px;
-  padding: 10px;
-}
+  a {
+    position: relative;
+    color: rgb(85, 83, 83);
+    font-size: 14px;
+    display: table;
+    width: 220px;
+    padding: 10px;
+  }
 
-.fas {
-  position: relative;
-  width: 70px;
-  height: 40px;
-  top: 14px;
-  font-size: 20px;
-  text-align: center;
-}
+  .fas {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+  }
 
-.nav-item {
-  position: relative;
-  top: 12px;
-  margin-left: 10px;
-  color: var(--blanco);
-  font-size: 20px;
-  font-family: "Playfair Display", serif;
-}
+  .nav-item {
+    position: relative;
+    top: 12px;
 
-a:hover {
-  background: var(--azuloscuro);
-}
+    margin-left: 10px;
+    color: var(--blanco);
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+  }
 
-.logout {
-  position: absolute;
-  bottom: 0;
-}
+  a:hover {
+    background: var(--azuloscuro);
+  }
 
-.container {
-  width: 50em;
-  height: 31em;
-  background-color: rgba(245, 241, 241, 0.59);
-  font-size: 29px;
-  top: 35px;
-  left: 13.9em;
-  justify-content: center;
-  position: relative;
-  border-radius: 10px;
-  font-family: "Marcellus", serif;
-  overflow: hidden;
-}
+  .logout {
+    position: absolute;
+    bottom: 0;
+  }
 
-.mini-container {
-  position: relative;
-  top: 20px;
-  font-size: 25px;
-  font-family: "Roboto", sans-serif;
-}
+  .container {
+    width: 50em;
+    height: 31em;
+    background-color: rgba(245, 241, 241, 0.59);
+    font-size: 29px;
+    top: 35px;
+    left: 10em;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+    font-family: "Marcellus", serif;
+    overflow: hidden;
+  }
 
-article img {
-  position: relative;
-  top: 80px;
-  left: 60px;
-  display: flex;
-  height: 300px;
-  width: 300px;
-  float: left;
-}
+  .mini-container {
+    position: relative;
+    top: 20px;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+  }
 
-.download {
-  display: flex;
-  position: absolute;
-  width: 10.3em;
-  height: 2em;
-  top: 13.5em;
-  left: 2.1em;
-  background: var(--azuloscuro);
-}
+  article img {
+    position: relative;
+    top: 80px;
+    left: 60px;
+    display: flex;
+    height: 220px;
+    width: 200px;
+    float: left;
+  }
 
-.download i {
-  color: var(--blanco);
-  margin-left: 75px;
-  margin-top: 1px;
-  font-size: 50px;
-}
+  .download {
+    display: flex;
+    position: absolute;
+    width: 200px;
+    height: 2em;
+    top: 10.8em;
+    left: 2.1em;
+    background: var(--azuloscuro);
+  }
 
-article h2 {
-  position: relative;
-  left: 150px;
-}
+  .download i {
+    color: var(--blanco);
+    margin-left: 40px;
+    padding-top: 3.5px;
+    font-size: 50px;
+  }
 
-input {
-  width: 25%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 20px;
-}
+  article h2 {
+    position: relative;
+    left: 150px;
+  }
 
-.tipe-document {
-  position: relative;
-  left: 150px;
-  top: 20px;
-}
+  input {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+  }
 
-.num-document {
-  position: relative;
-  left: 450px;
-  top: -95px;
-}
+  .type-document {
+    position: relative;
+    left: 120px;
+    top: 20px;
+  }
 
-.name {
-  position: relative;
-  top: -90px;
-}
+  .num-document {
+    position: relative;
+    left: 450px;
+    top: -95px;
+  }
 
-.apex {
-  position: relative;
-  left: 750px;
-  top: -185px;
-}
+  .name {
+    position: relative;
+    left: 180px;
+    top: -90px;
+  }
 
-.date-birth {
-  position: relative;
-  left: 300px;
-  top: -170px;
-}
+  .lastname {
+    position: relative;
+    left: 180px;
+    top: -90px;
+  }
 
-.pais {
-  position: relative;
-  left: 750px;
-  top: -265px;
-}
+  .date-birth {
+    position: relative;
+    left: 180px;
+    top: -85px;
+  }
 
-.form-check {
-  display: flex;
-  position: relative;
-  left: 300px;
-  top: -250px;
-}
+  .pais {
+    position: relative;
+    left: 750px;
+    top: -265px;
+  }
 
-.checks {
-  margin-left: -3em;
-  display: flex;
-  gap: 20px;
-}
+  .form-check {
+    display: flex;
+    position: relative;
+    left: 300px;
+    top: -250px;
+  }
 
-.num-cel {
-  position: relative;
-  left: 750px;
-  top: -360px;
-}
+  .checks {
+    margin-left: -3em;
+    display: flex;
+    gap: 20px;
+  }
 
-.email {
-  position: relative;
-  left: 300px;
-  top: -370px;
-}
+  .num-cel {
+    position: relative;
+    left: 750px;
+    top: -360px;
+  }
 
-button {
-  background: var(--negro);
-  border-radius: 5px;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 20%;
-}
+  .email {
+    position: relative;
+    left: 300px;
+    top: -370px;
+  }
 
-.update {
-  background: var(--negro);
-  border-radius: 5px;
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 15%;
-  height: 50px;
-  position: relative;
-  left: 300px;
-  top: -370px;
-}
+  button {
+    background: var(--negro);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 20%;
+  }
 
-.password {
-  position: relative;
-  left: 450px;
-  top: -340px;
-}
+  .update {
+    background: var(--negro);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 15%;
+    height: 50px;
+    position: relative;
+    left: 300px;
+    top: -370px;
+  }
 
-.confirme-password {
-  position: relative;
-  left: 62.5%;
-  top: -438px;
-}
+  .password {
+    position: relative;
+    left: 450px;
+    top: -340px;
+  }
 
-.cambiar {
-  background: var(--negro);
-  border-radius: 5px;
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 15%;
-  height: 50px;
-  position: relative;
-  left: 450px;
-  top: -465px;
-}
+  .confirme-password {
+    position: relative;
+    left: 62.5%;
+    top: -438px;
+  }
 
-.Update-password {
-  background: var(--negro);
-  border-radius: 5px;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 30px;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 250px;
-  position: relative;
-  left: -5em;
-  top: -25em;
+  .cambiar {
+    background: var(--negro);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 15%;
+    height: 50px;
+    position: relative;
+    left: 450px;
+    top: -465px;
+  }
+
+  .Update-password {
+    font-family: "Marcellus", serif;
+    background: var(--negro);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px;
+    cursor: pointer;
+    width: 200px;
+    position: relative;
+    left: -5.7em;
+    top: -26.5em;
+  }
 }
