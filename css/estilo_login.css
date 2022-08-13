@@ -6,6 +6,7 @@
   --azulnegro: #303342;
   --negro: #333333;
   --negro2: #000000;
+  --gris1: #262626;
   --gris: #b2b3b3;
   --fondo: #fffefc;
   --verdeazul: #157a8a;
@@ -23,9 +24,9 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
-  background-image: url(../img/kenny-eliason-Wp7t4cWN-68-unsplash.jpg);
+  background-image: url(../img/wallhaven-nm9vkm_1280x720.png);
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 }
 
 h1,
@@ -36,106 +37,230 @@ h5 {
   font-family: "Marcellus", serif;
 }
 
-.container-form {
-  color: var(--blanco);
-  display: flex;
-  flex-direction: column;
-  height: 500px;
-  width: 400px;
-  align-items: center;
-  margin: auto;
-  margin-top: 130px;
-  background-color: rgba(70, 154, 223, 0.85);
-  border-radius: 3px;
-  font-size: 18px;
-}
-
-.container-form .svg {
-  width: 100%;
-}
-
-.container-image {
-  margin-top: -130px;
-  padding: 20px;
-  display: flex;
-  float: left;
-  margin-right: 50%;
-  width: 200px;
-}
-
-.container-icons {
-  text-decoration: none;
-  font-size: 30px;
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
-  text-align: center;
-  background-color: var(--Magenta);
-  color: var(--blanco);
-  border-radius: 50%;
-}
-
-.container-input {
-  float: inline-start;
-  height: 30px;
-  width: 65%;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  background-color: var(--blanco);
-  color: var(--blanco);
-}
-
-.container-form span {
-  width: 65%;
-  margin-top: 20px;
-}
-
-button {
-  margin-top: 45px;
-  width: 65%;
-  height: 30px;
-  background-color: var(--negro2);
-  color: var(--blanco);
-  border-radius: 5px;
-  align-items: center;
-  justify-content: center;
-}
-
-.container-form p {
-  color: var(--blanco);
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-.container-form a {
-  color: var(--negro2);
-  text-decoration: none;
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 320px) {
   .container-form {
+    color: var(--blanco);
     display: flex;
     flex-direction: column;
-    height: 415px;
-    width: 385px;
+    height: 400px;
+    width: 350px;
+    align-items: center;
+    margin: auto;
+    margin-top: 150px;
+    background-color: rgba(51, 122, 183, 0.85);
+    border-radius: 5px;
+    font-size: 18px;
+    /* justify-content: center; */
+  }
+
+  .container-form .svg {
+    width: 100%;
+  }
+
+  .image {
+    margin-top: -130px;
+    padding: 20px;
+    display: flex;
+    float: left;
+    margin-right: 50%;
+    width: 200px;
+  }
+
+  .icons {
+    text-decoration: none;
+    font-size: 30px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    background-color: var(--Magenta);
+    color: var(--blanco);
+    border-radius: 50%;
+  }
+
+  .input {
+    float: inline-start;
+    height: 30px;
+    width: 65%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--blanco);
+    color: var(--blanco);
+  }
+
+  .container-form span {
+    width: 65%;
+    margin-top: 20px;
+  }
+
+  button {
+    margin-top: 45px;
+    width: 65%;
+    height: 30px;
+    background-color: var(--negro2);
+    color: var(--blanco);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+
+  button:hover {
+    margin-top: 45px;
+    width: 65%;
+    height: 30px;
+    background-color: var(--gris1);
+    color: var(--blanco);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button a:hover {
+    margin-top: 45px;
+    width: 65%;
+    height: 30px;
+    color: var(--blanco);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+
+  .container-form p {
+    color: var(--blanco);
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .container-form p a {
+    color: var(--negro2);
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .color-message {
+    color: var(--negro2);
+    text-decoration: none;
+  }
+
+  a {
+    color: var(--blanco);
+    text-decoration: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .container-form {
+    color: var(--blanco);
     display: flex;
     flex-direction: column;
-    height: 420px;
-    width: 395px;
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    background-color: rgba(51, 122, 183, 0.85);
+    border-radius: 5px;
+    font-size: 18px;
   }
-}
 
-@media screen and (min-width: 1308px) {
-  .container-form {
+  .container-form .svg {
+    width: auto;
+  }
+
+  .image {
+    margin-top: -130px;
+    padding: 20px;
     display: flex;
-    flex-direction: column;
-    height: 600px;
-    width: 500px;
+    float: left;
+    margin-right: 50%;
+    width: 200px;
+  }
+
+  .icons {
+    text-decoration: none;
+    font-size: 30px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    background-color: var(--Magenta);
+    color: var(--blanco);
+    border-radius: 50%;
+  }
+
+  .input {
+    float: inline-start;
+    height: 30px;
+    width: 65%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--blanco);
+    color: var(--blanco);
+  }
+
+  .container-form span {
+    width: 65%;
+    margin-top: 20px;
+  }
+
+  button {
+    margin-top: 45px;
+    width: 65%;
+    height: 30px;
+    background-color: var(--negro2);
+    color: var(--blanco);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+
+  button:hover {
+    margin-top: 45px;
+    width: 65%;
+    height: 30px;
+    background-color: var(--gris1);
+    color: var(--blanco);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button a:hover {
+    margin-top: 45px;
+    width: 65%;
+    height: 30px;
+    color: var(--blanco);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+  }
+
+  .container-form p {
+    color: var(--blanco);
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .container-form p a {
+    color: var(--negro2);
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .color-message {
+    color: var(--negro2);
+    text-decoration: none;
+  }
+
+  a {
+    color: var(--blanco);
+    text-decoration: none;
   }
 }

@@ -41,20 +41,43 @@ h5 {
 }
 
 @media only screen and (min-width: 320px) {
-  .menudesplegable:checked + .menu {
-    background-color: #0b3860;
+  .menudesplegable:checked ~ .menu {
+    background-color: #0b3860f3;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    display: block;
-    z-index: 1;
-    opacity: 0.96;
+    transition: transform 0.6s ease;
     position: absolute;
-    min-width: 160px;
+    width: 100%;
+    height: 12em;
   }
 
+  
 
+  .menu-hr {
+    width: 90%;
+    border-color: var(--blanco);
+  }
+
+  .navbar-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    padding: 0.5rem;
+    font-family: "Marcellus", serif;
+    color: var(--blanco);
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-hr {
+    width: 90%;
+    border-color: var(--blanco);
+  }
 
   .logo {
     background-color: var(--negro2);
@@ -74,18 +97,20 @@ h5 {
     font-size: 2rem;
   }
 
-  .menu-hr {
-    width: 90%;
-    border-color: var(--blanco);
+  nav {
+    top: 0;
+    font-family: "Marcellus", serif;
+    font-size: 1.3em;
+    padding: 0%;
+    z-index: 3;
   }
-
- 
 
   nav a {
     color: var(--blanco);
     text-decoration: none;
     text-align: center;
     padding: 0.5em;
+
   }
 
   nav a:hover {
@@ -93,7 +118,6 @@ h5 {
     text-decoration: none;
     background-color: var(--azuloscuro);
     border-radius: 5px;
-    
   }
 
   .navbar-button {
@@ -423,7 +447,7 @@ h5 {
     background-size: cover;
     color: white;
     padding-top: 1rem;
-    height: 30em;
+    height: 38em;
     width: auto;
   }
 
