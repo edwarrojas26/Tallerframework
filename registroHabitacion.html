@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/estilo_registroHabitacion.css">
+    <link rel="icon" href="img/hotelia campana.svg">
+    <title>Taller 0 Maquetación Responsive Registro Habitacion</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="img/Hotelia horizontal blanco.svg">
+            <div class="usuario">
+                <h3>Angie Vargas</h3>
+                <p>Angievargas2@gmail.com</p>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="item">
+                <div><i class="fa-solid fa-bed"></i><a href="#">Habitaciones</a></div>
+                <div><i class="fa-solid fa-bed"></i><a href="#">Registrar habitaciones</a></div>
+                <div><i class="fa-solid fa-bell-concierge"></i><a href="#">Habitaciones</a></div>
+            </div>
+
+        </div>
+        <div class="exit">
+            <i class="fa-solid fa-right-from-bracket"></i><a href="index.html">Cerrar sesión</a>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <!-- dashboard -->
+        <div class="bienvenido">
+            <h1>Registro de nueva habitación</h1>
+        </div>
+
+        <div class="col-1">
+            <div id="NH">
+                <label>Nombre habitacion</label><br>
+                <input type="text" name="nombre">
+            </div>
+
+            <div id="NoH">
+                <label>Nº Habitacion<label><br>
+                <input type="number" name="doc">
+            </div>
+
+            <div id="Camas">
+                <label>Nº Camas</label>
+                <i class="fa-solid fa-minus" id="figuras"></i>
+                <input type="number" class="campo-all">
+                <i class="fa-solid fa-plus" id="figuras-2"></i>
+            </div>
+
+            <div id="Huesped">
+                <label>Nº Huéspedes</label>
+                <i class="fa-solid fa-minus" id="figuras"></i>
+                <input type="number" class="campo-all">
+                <i class="fa-solid fa-plus" id="figuras-2"></i>
+            </div>
+
+            <div>
+                <label for="nombre">Valor reserva</label>
+                <input type="text" name="nombre" id="nombre" value="Angie Camila">
+            </div>
+
+            <div>
+                <label for="apellido">Imagen principal</label>
+                <input type="text" name="apellido" id="apellido" value="Vargas Pinzon">
+            </div>
+
+            <div>
+                <label for="email">Imagen secundaria</label>
+                <input type="email" placeholder="e-mail" value="Angievargas2@gmail.com">
+            </div>
+
+            <div>
+                <label for="pais">Decripción</label>
+                <textarea name="pais" id="pais"></textarea>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

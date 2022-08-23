@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=llMarceus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
   --azulclaro: #48d6ed;
@@ -21,7 +21,7 @@
 }
 
 body {
-  background-image: url(../img/wallhaven-k9r8xm_1280x720.png);
+  background-image: url(../img/wallhaven-4xk7dv_1280x720.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -103,9 +103,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .bienvenido {
+    font-family: "Marcellus", serif;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -158,19 +160,19 @@ body {
     display: none;
   }
 
-  form {
+  .col-1 {
     width: 80%;
     margin: 1rem;
   }
 
-  form .columnas {
+  .col-1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
   }
 
-  form .col-1 {
+  .col-1 {
     display: flex;
     padding: 1.5em;
     width: 90%;
@@ -211,19 +213,6 @@ body {
   #genero label {
     margin-right: 1em;
   }
-
-  .botones button {
-    width: 100%;
-    color: var(--blanco);
-    background-color: var(--negro2);
-    padding: 2%;
-    font-size: 1.2em;
-    margin-top: 1em;
-    border-radius: 5px;
-    border: 0;
-    margin-left: 1em;
-  }
-
   .pass {
     display: flex;
     flex-direction: row;
@@ -238,21 +227,6 @@ body {
     border-radius: 5px;
     border: 0;
   }
-
-  .pass2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-top: 9em;
-  }
-
-  .pass2 input {
-    width: 70%;
-    padding: 0.5rem;
-    font-size: 1.2em;
-    border-radius: 5px;
-    border: 0;
-  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -260,7 +234,7 @@ body {
     width: 17%;
     color: var(--blanco);
     position: fixed;
-    height: 500px;
+    height: 493px;
   }
 
   nav .logo {
@@ -349,6 +323,7 @@ body {
   }
 
   .bienvenido {
+    font-family: "Marcellus", serif;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -401,27 +376,16 @@ body {
     font-size: 2em;
   }
 
-  form {
-    width: 80%;
-    margin: 1rem;
-  }
-
-  form .columnas {
-    display: flex;
+  .col-1 {
+    display:flex;
     width: 100%;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-
-  form .col-1 {
     display: flex;
-    padding: 1.5em;
-    width: 90%;
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 
-  form .col-1 input {
-    width: 100%;
+ 
+
+  .col-1 input {
     padding: 0.5em;
     margin: 0.5em 0 0.5em 0;
     font-size: 1em;
@@ -429,60 +393,65 @@ body {
     border: 0;
   }
 
-  #genero ul {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    margin: 0%;
-    /* margin: 1em 0; */
-  }
-  #genero input {
-    margin: 1px;
+  .col-1 #NH input {
+    width: 500px;
   }
 
-  .botones button {
+  .col-1 #NoH {
+    width: 30%;
+  
+  }
+
+  .col-1 #NoH input{
+    width: 300px;
+
+  }
+
+
+  .col-1 #Camas input , .col-1 #Huesped input{
+    width: 20%;
+  }
+
+  .col-1 #Camas label, .col-1 #Huesped label {
+    
+    flex-direction: column;
+ 
+  }
+
+  .col-1 #Camas , .col-1 #Huesped  {
+    display: flex;
+    width: 300px;
+  }
+
+
+  #figuras {
+    color: white;
+    background-color: black;
+    width: 37px;
+    text-align: center;
+    height: 44px;
+    margin-top: 2%;
+  }
+  #figuras-2 {
+    color: white;
+    background-color: black;
+    width: 37px;
+    text-align: center;
+    height: 44px;
+    margin-top: 2%;
+  }
+
+  .col-1 textarea {
     width: 100%;
-    color: var(--blanco);
-    background-color: var(--negro2);
-    padding: 2%;
-    font-size: 1.2em;
-    margin-top: 1em;
-    border-radius: 5px;
-    border: 0;
-    margin-left: 0em;
-  }
-
-  .pass {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-top: 1em;
-  }
-
-  .pass input {
-    width: 70%;
-    padding: 0.5rem;
-    font-size: 1.2em;
-    border-radius: 5px;
-    border: 0;
-  }
-
-  .pass2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-top: 10.7em;
-  }
-
-  .pass2 input {
-    width: 70%;
-    padding: 0.5rem;
-    font-size: 1.2em;
+    padding: 0.5em;
+    margin: 0.5em 0 0.5em 0;
+    font-size: 1em;
     border-radius: 5px;
     border: 0;
   }
 }
 
-/* * {
-  border: solid red 1px;
-} */
+* {
+  /* border: 1px solid red; */
+  margin: 0;
+}
